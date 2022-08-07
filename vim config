@@ -1,0 +1,24 @@
+  1   set relativenumber
+    1 set nu
+    2 
+    3 
+    4 set hidden
+    5 set nowrap
+    6 set tabstop=4 softtabstop=4
+    7 set shiftwidth=4
+    8 set expandtab
+    9 set smartindent
+   10 set incsearch
+   11 set scrolloff=10
+   12 set signcolumn=yes
+   13 
+   14 call plug#begin('~/.local/share/nvim/site/autoload/plug')
+   15 Plug 'nvim-lua/popup.nvim'
+   16 Plug 'nvim-lua/plenary.nvim'
+   17 Plug 'nvim-telescope/telescope.nvim'
+   18 Plug 'gruvbox-community/gruvbox'
+   19 call plug#end()
+   20 
+   21 colorscheme gruvbox
+   22 hi Normal guibg=none ctermbg=NONE
+   23 
