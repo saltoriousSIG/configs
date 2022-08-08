@@ -20,4 +20,5 @@ call plug#end()
  
 colorscheme gruvbox
 hi Normal guibg=none ctermbg=NONE
- 
+let mapleader = " "
+nnoremap <leader>ps :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep fo
